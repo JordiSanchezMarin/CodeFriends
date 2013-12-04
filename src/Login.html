@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CodeFriends</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57-precomposed.png">
+  <link rel="shortcut icon" href="img/favicon.png">
+  
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+    <style type="text/css">
+        body
+        {
+            background-color:#202020;
+            font-family:Verdana;
+        }
+        #nav
+        {
+            background-color:#202020;
+        }
+        button
+        {
+              width:100px;
+        }
+        p
+        {
+            font-size:16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav" class=" navbar-inverse navbar-fixed-top" role="navigation" >
+      <div class="container" >
+
+        <div class="navbar-header" >
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" style="color:White;font-size:20px"  href="Login.html"> <strong>CodeFriends</strong> </a>
+        </div>
+        <div class="collapse navbar-collapse" >
+          <ul class="nav navbar-nav">
+            <li><a href="#about" style="color:White;">Sobre nosotros </a></li>
+          </ul>
+          <div class="navbar-collapse collapse">
+              <form class="navbar-form navbar-right">
+                <div class="form-group">
+                    <input type="text" placeholder="Email" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Contraseña" class="form-control">
+                </div>
+                    <button type="button" class="btn btn-default"><strong>Entrar</strong></button>
+              </form>
+            </div><!--/.navbar-collapse -->
+        </div><!--/.nav-collapse -->
+
+        
+		</div>
+      </div>
+      <div class="container " style="padding:80px;background-color:#ffffff;height:600px">
+         <div class="row clearfix">
+		    <div class="col-md-7 column  hidden-phone hidden-tablet">
+            <h2>Bienvenido a CodeFriends!</h2>
+                    <p >Evalua, comparte y compara tu codigo con el de tus amigos.</p>
+                    <div >
+                        <img  src="img/logo/img_logo.png" style="margin-top:50px;width:80%"/>
+                    </div>
+		    </div>
+		    <div class="col-md-5 column">
+            <form class="bs-example form-horizontal" style="margin-top:30px;">
+                <fieldset>
+                  <legend>Registro</legend>
+
+                              <div class="form-group">
+                                <div class="col-lg-10">
+                                  <input type="text" class="form-control" placeholder="Email">
+                                </div>
+                              </div>
+
+                              <div class="form-group">
+                                <div class="col-lg-10">
+                                  <input type="text" class="form-control" placeholder="Nombre de usuario">
+                                </div>
+                              </div>
+
+                              <div class="form-group">
+                                <div class="col-lg-10">
+                                  <input type="password" class="form-control" placeholder="Contraseña">
+                                </div>
+                              </div>
+
+                              <div class="form-group">
+                                <div class="col-lg-10">
+                                  <input type="password" class="form-control" placeholder="Repite la contraseña">
+                                  <div class="checkbox" style="margin-top:10px">
+                                    <label>
+                                      <input type="checkbox"> Acepto las condiciones y terminos de uso
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                                <div class="form-group">
+                                <div class="row clearfix">
+                                 <div class="col-md-12 column">
+                                    <button type="submit" class="btn btn-inverse" style="background-color:#202020;color:White;margin-left:14px;margin-top:10px"><strong> Finalizar</strong></button> 
+                                 
+			                                     <a id="modal-485983" href="#modal-container-485983" role="button" class="btn" data-toggle="modal"><button type="submit" class="btn btn-inverse" style="background-color:#202020;color:White;margin-top:10px"><strong>Terminos</strong></button></a>
+			
+			                                    <div class="modal fade" id="modal-container-485983" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				                                    <div class="modal-dialog">
+					                                    <div class="modal-content" style = "background-color:#C0C0C0">
+						                                    <div class="modal-header" style="background-color:#242424 ">
+							                                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="color:#C0C0C0">×</button>
+							                                    <h4 class="modal-title" id="myModalLabel" style="color:#C0C0C0;font-family:Verdana;">
+								                                    <strong>Condiciones y terminos de uso</strong>
+							                                    </h4>
+						                                    </div>
+						                                    <div class="modal-body" style="text-align:left;font-family:Verdana;background-color:#C0C0C0;">
+							                                     <div class="bs-docs-example">
+                                                                    <div class="btn-group btn-inverse" >
+                                                                      
+                                                                      <button type="button"  class="btn  dropdown-toggle"  style="color:#C0C0C0;background-color:#202020;" data-toggle="dropdown">Filtros <span class="caret"></span> </button>
+                                                                      <ul class="dropdown-menu" style="color:White;background-color:#202020;">
+                                                                        <li><a href="#users" style="color:#C0C0C0;">1. La aceptación por parte de los Usuarios</a></li>
+                                                                        <li><a href="#capacidad" style="color:#C0C0C0;">2. Capacidad legal de los usuarios</a></li>
+                                                                        <li><a href="#notificaciones" style="color:#C0C0C0;">3. Notificaciones y comunicaciones</a></li>
+                                                                      </ul>
+                                                                    </div><!-- /btn-group -->
+                                                                    <div data-spy="scroll" data-target="#navbarExample" data-offset="0" class="scrollspy-example">
+                                                                      <h4 id="users">1. La aceptación por parte de los Usuarios</h4>
+                                                                      <p>CodeFriends!, se reserva el derecho a exigir que cada usuario, acepte y cumpla los términos aquí expresados como condición previa y necesaria para el acceso, y utilización de los servicios y/o contenidos brindados por el Sitio.Cuando un usuario accediere al Sitio y utilizare cualquiera de los servicios y/o contenidos existentes, hará presumir el conocimiento del presente texto y que ha manifestado su plena aceptación con respecto a todas y cada una de las disposiciones que lo integran.El usuario que no acepte, se halle en desacuerdo, o incurriere en incumplimiento de las disposiciones fijadas por CodeFriends! en estas Condiciones Generales, no contará con autorización para el uso de los servicios y contenidos que existen o puedan existir en el Sitio, debiendo retirarse del Sitio en forma inmediata, y abstenerse de ingresar nuevamente al mismo.</p>
+                                                                      <h4 id="capacidad">2. Capacidad legal de los usuarios</h4>
+                                                                      <p>Solo podrán acceder y utilizar los servicios y/o contenidos CodeFriends!, quienes a tenor de la legislación vigente en su lugar de residencia puedan válidamente emitir su consentimiento para la celebración de contratos. Quienes a tenor de la legislación vigente no posean tal capacidad para acceder u obligarse válidamente a los términos y condiciones aquí establecidos, deberán obtener inexcusablemente autorización previa de sus representantes legales, quienes serán considerados responsables de todos los actos realizados por los incapaces a su cargo.Cuando se trate de falta de capacidad por minoría de edad, la responsabilidad en la determinación de los servicios y contenidos a los que acceden los menores de edad corresponde a los mayores a cuyo cargo se encuentren, sin embargo en ningún caso estará permitido el acceso al sitio por parte de menores de 13 años de edad.</p>
+                                                                      <h4 id="notificaciones">3. Notificaciones y comunicaciones</h4>
+                                                                      <p>A los fines que los usuarios puedan tomar contacto con CodeFriends! se considerarán válidas las comunicaciones dirigidas a: denuncias[@]codefriends.net.Las notificaciones y comunicaciones cursadas por Taringa! a la casilla de correo electrónico que surja como dirección de correo del usuario o remitente se considerarán eficaces y plenamente válidas. Asimismo se considerarán eficaces las comunicaciones que consistan en avisos y mensajes insertos en el sitio, o que se envíen durante la prestación de un servicio, que tengan por finalidad informar a los usuarios sobre determinada circunstancia.</p>
+                                                                    </div>
+                                                                  </div>
+						                                    </div>
+						                                    <div class="modal-footer" style="background-color:#242424 ">
+                                                                 <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+						                                    </div>
+					                                    </div>
+				                                    </div>
+			                                    </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+	                                    
+                                </div>
+                </fieldset>
+              </form>
+		    </div>
+	    </div>
+      </div>
+</body>
+</html>
