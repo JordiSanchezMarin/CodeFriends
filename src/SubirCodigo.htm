@@ -21,7 +21,17 @@
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
+    
     <style type="text/css">
+        textarea {
+            width: 300px;
+            scrollbar-base-color: #ff8c00;
+            scrollbar-arrow-color: white;
+            resize:none;
+            width:100%;
+            margin-top:7px;
+            height:273px;
+        }
         body
         {
             background-color:#202020;
@@ -43,10 +53,38 @@
         {
             text-align:center;
         }
-        span
-        {
-            color:#202020;
-        }
+       input[type=checkbox].css-checkbox {
+		    position: absolute; 
+		    overflow: hidden; 
+		    clip: rect(0 0 0 0); 
+		    height:1px; 
+		    width:1px; 
+		    margin:-1px; 
+		    padding:0;
+		    border:0;
+	    }
+
+	    input[type=checkbox].css-checkbox + label.css-label {
+		    padding-left:20px;
+		    height:15px; 
+		    display:inline-block;
+		    line-height:15px;
+		    background-repeat:no-repeat;
+		    background-position: 0 0;
+		    font-size:15px;
+		    vertical-align:middle;
+		    cursor:pointer;
+	    }
+
+	    input[type=checkbox].css-checkbox:checked + label.css-label {
+		    background-position: 0 -15px;
+	    }
+						
+	    .css-label 
+	    {
+	        background-image:url(http://csscheckbox.com/checkboxes/dark-plus.png); 
+	    }
+        
     </style>
 </head>
 
@@ -79,7 +117,7 @@
       <div class="container "style="background-color:#ffffff;height:600px;border:2px solid;border-radius:25px;"  >
             <div class="row clearfix"  style="border-bottom: 1px solid #202020">
 		        <div class="col-md-12 column" style="margin-bottom:10px">
-			        <div class="row clearfix">
+			        <div class="row clearfix"  >
 				        <div class="col-md-8 column">
 					        <div class="btn-group btn-group-md">
 						         <button class="btn btn-inverse" style="background-color:#202020;color:White;margin-top:10px;width:100px" type="button"><a href="Principal.htm" style="color:White">Inicio</a></button> 
@@ -105,24 +143,25 @@
 		        </div>
 	        </div>
             <div class="row clearfix"  style="border-bottom: 1px solid #202020;padding:10px 0px">
-                <div class="col-lg-3" style="">
-                    <div class="row clearfix">
+                <div class="col-lg-4" style="border-right:1px solid #202020">
+                    <div class="row clearfix" >
                         <div class="col-lg-3">
                             <img src="img/n1.png" style="width:100%" />
                         </div>
                         <div class="col-lg-9">
-                            <p style="color:#202020;font-weight:bold">Selecciona el codigo que quieres evaluar</p> <input type="file" class="btn btn-inverse" style="background-color:#202020;color:#202020;width:170px" />
+                            <p style="color:#202020;">Selecciona el codigo que quieres evaluar</p> <button class="btn btn-inverse" style="background-color:#202020;color:White;width:183px">Seleccionar archivo</button>
+                            <p style="color:#202020;padding-top:7px;margin-bottom:0px;font-style:italic">LaVolta.rar</p>
                         </div>
                     </div>
-                    <div class="row clearfix" style="margin-top:10px">
+                    <div class="row clearfix" style="margin-top:47px">
                         <div class="col-lg-3">
                             <img src="img/n2.png" style="width:100%" />
                         </div>
                         <div class="col-lg-9">
-                            <p style="color:#202020;font-weight:bold">Elige el tipo de reto</p>
+                            <p style="color:#202020;">Elige un reto</p>
                              <div class="btn-group" >
                               <button type="button" class="btn btn-default" style="background-color:#202020;color:White;width:150px">Selecciona un reto</button>
-                              <button type="button"  style="background-color:#202020;color:White;width:30px" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span  class="caret" ></span></button>
+                              <button type="button"  style="background-color:#202020;color:White;width:35px;text-align:center" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span  class="glyphicon glyphicon-chevron-down" style="color:White"></span></button>
                               <ul class="dropdown-menu">
                                 <li><a href="#">Programación web</a></li>
                                 <li><a href="#">Juegos</a></li>
@@ -132,21 +171,167 @@
                             </div><!-- /btn-group -->
                         </div>
                     </div>
-                    <div class="row clearfix" style="margin-top:10px">
+                    <div class="row clearfix" style="margin-top:47px">
                         <div class="col-lg-3">
-                            <img src="img/n3.png" class="img-rounded" style="width:100%" />
+                            <img src="img/n3.png" style="width:100%" />
                         </div>
                         <div class="col-lg-9">
-                            <p style="color:#202020;font-weight:bold">Evalua el codigo</p>
+                            <div class="row clearfix">
+                                <div class="col-lg-1">
+                                    
+                                </div>
+                                <div class="col-lg-11">
+                                    <p style="color:#202020;">Lenguajes utilizados</p>
+                                </div>
+                            </div>
+                            <div class="row clearfix">
+                                
+                                <div class="col-lg-4">
+                                    <input id="demo_box_1" class="css-checkbox" type="checkbox" />
+					                <label for="demo_box_1" name="demo_lbl_1" class="css-label">C#</label>
+                                    <input id="demo_box_6" class="css-checkbox" type="checkbox" />
+					                <label for="demo_box_6" name="demo_lbl_6" class="css-label">JS</label>
+                                    <input id="demo_box_7" class="css-checkbox" type="checkbox" />
+                                    <label for="demo_box_7" name="demo_lbl_7" class="css-label">IOS</label>
+                                </div>
+                                <div class="col-lg-4">
+                                    <input id="demo_box_2" class="css-checkbox" type="checkbox" />
+					                <label for="demo_box_2" name="demo_lbl_2" class="css-label">Java</label>
+					                <input id="demo_box_3" class="css-checkbox" type="checkbox" />
+					                <label for="demo_box_3" name="demo_lbl_3" class="css-label">Android</label>
+                                    <input id="demo_box_8" class="css-checkbox" type="checkbox" />
+                                    <label for="demo_box_8" name="demo_lbl_8" class="css-label">PHP</label>
+                                </div>
+                                <div class="col-lg-4">
+                                    <input id="demo_box_4" class="css-checkbox" type="checkbox" />
+					                <label for="demo_box_4" name="demo_lbl_4" class="css-label">HTML</label>
+                                    <input id="demo_box_5" class="css-checkbox" type="checkbox" />
+					                <label for="demo_box_5" name="demo_lbl_7" class="css-label">CSS</label>
+                                </div>
+                            </div>
+                            
+                           
+                            
+                        </div>
+                    </div>
+                    <div class="row clearfix" style="margin-top:47px">
+                        <div class="col-lg-3">
+                            <img src="img/n4.png" class="img-rounded" style="width:100%" />
+                        </div>
+                        <div class="col-lg-9">
+                                <button class="btn btn-inverse" style="background-color:#202020;color:White;width:183px;height:43px">Evaluar</button>
                         </div>
                     </div>
                     
                 </div>
-                <div class="col-lg-5" >
-                   ssss
-                </div>
-                <div class="col-lg-4" style="text-align:right;">
-                   
+                <div class="col-lg-8" >
+                   <div class="row clearfix">
+                        <div class="col-lg-12">
+                             <div class="bs-example table-responsive">
+                                  <table class="table table-striped table-bordered table-hover" style="margin-top:10px">
+                                    <thead>
+                                      <tr>
+                                        <th>Fichero</th>
+                                        <th>Tamaño</th>
+                                        <th>Extension</th>
+                                        <th>Fichero</th>
+                                        <th>Tamaño</th>
+                                        <th>Extension</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>Index</td>
+                                        <td>190 Kb</td>
+                                        <td>html</td>
+                                        <td >Registro</td>
+                                        <td>250 Kb</td>
+                                        <td>html</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Login</td>
+                                        <td>172 Kb</td>
+                                        <td>html</td>
+                                        <td>Listados</td>
+                                        <td>302 Kb</td>
+                                        <td>html</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Style_index</td>
+                                        <td>120 Kb</td>
+                                        <td>css</td>
+                                        <td>Style_registro</td>
+                                        <td>146 Kb</td>
+                                        <td>css</td>
+                                      </tr>
+                                      
+                                    </tbody>
+                                </table>
+                            </div><!-- /example -->
+                        </div>
+                   </div>
+                   <div class="row clearfix">
+                        <div class="col-lg-12">
+                            <ul class="nav nav-tabs" style="border-bottom:1px solid #202020">
+                              <li class="active" ><a href="#" style="background-color:#202020;color:White">Index.html</a></li>
+                              <li><a href="#" style="background-color:#202020;color:White">Style_index.css</a></li>
+                              <li><a href="#" style="background-color:#202020;color:White">Login.html</a></li>
+                              <li><a href="#" style="background-color:#202020;color:White">Registro.html</a></li>
+                              <li><a href="#" style="background-color:#202020;color:White">Style_registro.css</a></li>
+                            </ul>
+                        </div> 
+                   </div>
+                   <div class="row clearfix">
+                        <div class="col-lg-12">
+                            <textarea disabled="disabled" name="item" cols="50" rows="7">
+                                <style type="text/css">
+                                    /* bootstrap overrides */
+
+                                    html, body {
+                                        height: 100%;
+                                    }
+
+                                    .main, .row-fluid {
+                                        height: 100%;
+                                    }
+
+                                    .main:before, .main:after,
+                                    .column:before, .column:after {
+                                        content: "";
+                                        display: table;
+                                    }
+
+                                    .main:after,
+                                    .column:after {
+                                        clear: both;
+                                    }
+
+                                    .column {
+                                        height: 100%;
+                                        overflow: auto;
+                                        *zoom:1;
+                                    }
+
+                                    .column .padding {
+                                        padding: 20px;
+                                    }
+
+                                    .box {
+  	                                    bottom: 0;
+                                        left: 0;
+                                        position: absolute;
+                                        right: 0;
+  	                                    top:0;
+                                    }
+
+                                    .span9.full {
+                                        width: 100%;
+                                    }
+
+                                </style>
+                            </textarea>
+                        </div>
+                   </div>
                 </div>
             </div>
             <div class="row clearfix"  style="border-bottom: 1px solid #202020;background-color:#202020;color:White">
