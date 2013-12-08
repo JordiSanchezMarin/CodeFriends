@@ -1,0 +1,352 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CodeFriends</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57-precomposed.png">
+  <link rel="shortcut icon" href="img/favicon.png">
+  
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+    
+    <style type="text/css">
+        textarea {
+            width: 300px;
+            scrollbar-base-color: #ff8c00;
+            scrollbar-arrow-color: white;
+            resize:none;
+            width:100%;
+            margin-top:7px;
+            height:253px;
+        }
+        body
+        {
+            background-color:#202020;
+            font-family:Verdana;
+        }
+        #nav
+        {
+            background-color:#202020;
+        }
+        button
+        {
+              width:100px;
+        }
+        p
+        {
+            font-size:16px;
+        }
+        .t-2
+        {
+            text-align:center;
+        }
+       input[type=checkbox].css-checkbox {
+		    position: absolute; 
+		    overflow: hidden; 
+		    clip: rect(0 0 0 0); 
+		    height:1px; 
+		    width:1px; 
+		    margin:-1px; 
+		    padding:0;
+		    border:0;
+	    }
+
+	    input[type=checkbox].css-checkbox + label.css-label {
+		    padding-left:20px;
+		    height:15px; 
+		    display:inline-block;
+		    line-height:15px;
+		    background-repeat:no-repeat;
+		    background-position: 0 0;
+		    font-size:15px;
+		    vertical-align:middle;
+		    cursor:pointer;
+	    }
+
+	    input[type=checkbox].css-checkbox:checked + label.css-label {
+		    background-position: 0 -15px;
+	    }
+						
+	    .css-label 
+	    {
+	        background-image:url(http://csscheckbox.com/checkboxes/dark-plus.png); 
+	    }
+        
+    </style>
+</head>
+
+<body>
+      <div class="container" style="height:50px">
+
+        <div class="navbar-header" >
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" style="color:White;font-size:20px;padding-left:0px" href="Login.html"> <strong>CodeFriends</strong> </a>
+        </div>
+
+          <div class="navbar-collapse collapse" style="padding-right:0px">
+              <form class="navbar-form navbar-right" style="padding-right:0px">
+              <div class="form-group">
+                        <a style="color:Gray;">jordisanchez00@gmail.com</a><br />
+                        <a style="color:White;" href="Login.html">Cerrar sesion</a>
+                </div>
+              </form>
+            </div><!--/.navbar-collapse -->
+
+
+      </div>
+      <div class="container "style="background-color:#ffffff;height:595px;border:2px solid;border-radius:25px;"  >
+            <div class="row clearfix"  style="border-bottom: 1px solid #202020">
+		        <div class="col-md-12 column" style="margin-bottom:10px">
+			        <div class="row clearfix"  >
+				        <div class="col-md-8 column">
+					        <div class="btn-group btn-group-md">
+						         <button class="btn btn-inverse" style="background-color:#202020;color:White;margin-top:10px;width:70px" type="button"><a href="Principal.htm" style="color:White">Inicio</a></button> 
+                                 <button class="btn btn-inverse" style="background-color:#202020;color:White;margin-top:10px;width:110px" type="button"><a href="SubirCodigo.htm" style="color:White">Subir Codigo</a></button> 
+                                 <button class="btn btn-inverse" style="background-color:#202020;color:White;margin-top:10px;width:80px" type="button"><a href="Amigos.htm" style="color:White">Amigos</a></button> 
+                                 <button class="btn btn-inverse" style="background-color:#202020;color:White;margin-top:10px;width:80px" type="button"><a href="Circulos.htm" style="color:White">Circulos</a></button> 
+                                 <button class="btn btn-inverse" style="background-color:#202020;color:White;margin-top:10px;width:70px;padding-left:15px" type="button"> <a href="Retos.htm" style="color:White">Retos</a></button>
+                                 <button class="btn btn-inverse" style="background-color:#202020;color:White;margin-top:10px;width:70px" type="button"><a href="Logros.htm"  style="color:White">Logros</a></button>
+                                 <button class="btn btn-inverse" style="background-color:#202020;color:White;margin-top:10px;width:110px" type="button">Configuración</button>
+                                 <button class="btn btn-inverse" style="background-color:#202020;color:White;margin-top:10px;" type="button">Ayuda</button>
+					        </div>
+				        </div>
+				        <div class="col-md-4 column" style="margin-top:10px;text-align:right">
+                            <div class="row clearfix"> 
+                                <div class="col-md-9 column">
+                                     <input type="text" class="form-control" placeholder="Buscar"/> 
+                                </div>
+                                <div class="col-md-3 column">
+                                     <button class="btn btn-inverse" style="background-color:#202020;color:White;width:60px"> <span style="color:White" class="glyphicon glyphicon-search"></span> </button>
+                                </div>
+				            </div>
+                        </div>
+			        </div>
+		        </div>
+	        </div>
+            <div class="row clearfix" >
+                <div class="col-lg-9">
+                    <div class="row clearfix">
+                        <div class="col-lg-4">
+                            <h3>Encuentra a ...</h3>
+                            <div class="row clearfix"> 
+                                <div class="col-md-12 column">
+                                     <input type="text" class="form-control" placeholder="An"/> 
+                                </div>
+				            </div>
+                            <div class="bs-example table-responsive">
+                                  <table class="table table-striped table-bordered table-hover" style="margin-top:10px">
+                                    <tbody>
+                                      <tr>
+                                        <td><p>Antonia Marin</p></td>
+                                      </tr>
+                                      <tr>
+                                        <td><p>Antonio Ferras</p></td>
+                                      </tr>
+                                      <tr>
+                                        <td><p>Ana Cros</p></td>
+                                      </tr>
+                                    </tbody>
+                                </table>
+                            </div><!-- /example -->
+                        </div>
+                        <div class="col-lg-8" style="padding:0px">
+                                <div class="row clearfix">
+                                    <div class="col-lg-12">
+                                        <h3>Amigos</h3>
+                                    </div>
+                                </div>
+                                <div style="overflow-y:auto;overflow-x:hidden;height:470px;width:100%">
+                                    <div class="row clearfix" style="margin-bottom:30px">
+                                        <div class="col-lg-12">
+                                            <div class="bs-example table-responsive">
+                                                <table class="table table-striped table-bordered table-hover" style="margin-top:10px">
+                                                <tbody>
+                                                    <tr>
+                                                    <td>
+                                                        <div class="row clearfix" >
+                                                            <div class="col-lg-3">
+                                                                <img src="img/perfil2.png" class="img-rounded" style="width:85px;height:85px;" />
+                                                            </div>
+                                                            <div class="col-lg-9" style="margin:auto">
+                                                                <p>Ivan Sanchez</p>
+                                                                <p>20 amigos en común</p>
+                                                                <p>Circulo: Familia</p>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </td>
+                                                    </tr>
+                                                    <tr>
+                                                    <td>
+                                                        <div class="row clearfix" >
+                                                            <div class="col-lg-3">
+                                                                <img src="img/perfil3.png" class="img-rounded" style="width:85px;height:85px;" />
+                                                            </div>
+                                                            <div class="col-lg-9" style="margin:auto">
+                                                                <p>Antonia Marin</p>
+                                                                <p>7 amigos en común</p>
+                                                                <p>Circulo: Familia</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    </tr>
+                                                    <tr>
+                                                    <td>
+                                                        <div class="row clearfix" >
+                                                            <div class="col-lg-3">
+                                                                <img src="img/perfil.png" class="img-rounded" style="width:85px;height:85px;" />
+                                                            </div>
+                                                            <div class="col-lg-9" style="margin:auto">
+                                                                <p>Jordi Sanchez</p>
+                                                                <p>23 amigos en común</p>
+                                                                <p>Circulo: Familia</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    </tr>
+                                                    <tr>
+                                                    <td>
+                                                        <div class="row clearfix" >
+                                                            <div class="col-lg-3">
+                                                                <img src="img/perfil4.png" class="img-rounded" style="width:85px;height:85px;" />
+                                                            </div>
+                                                            <div class="col-lg-9" style="margin:auto">
+                                                                <p>Pedro Garcia</p>
+                                                                <p>39 amigos en común</p>
+                                                                <p>Circulo: Conocidos</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    </tr>
+                                                    <tr>
+                                                    <td>
+                                                        <div class="row clearfix" >
+                                                            <div class="col-lg-3">
+                                                                <img src="img/perfil5.png" class="img-rounded" style="width:85px;height:85px;" />
+                                                            </div>
+                                                            <div class="col-lg-9" style="margin:auto">
+                                                                <p>Paola Diaz</p>
+                                                                <p>50 amigos en común</p>
+                                                                <p>Circulo: Amigos</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    </tr>
+                                                    <tr>
+                                                    <td>
+                                                        <div class="row clearfix" >
+                                                            <div class="col-lg-3">
+                                                                <img src="img/perfil6.png" class="img-rounded" style="width:85px;height:85px;" />
+                                                            </div>
+                                                            <div class="col-lg-9" style="margin:auto">
+                                                                <p>Raimon Florensa</p>
+                                                                <p>77 amigos en común</p>
+                                                                <p>Circulo: Amigos</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    </tr>
+                                                    <tr>
+                                                    <td>
+                                                        <div class="row clearfix" >
+                                                            <div class="col-lg-3">
+                                                                <img src="img/perfil7.png" class="img-rounded" style="width:85px;height:85px;" />
+                                                            </div>
+                                                            <div class="col-lg-9" style="margin:auto">
+                                                                <p>Caros Garcia</p>
+                                                                <p>8 amigos en común</p>
+                                                                <p>Circulo: CEP</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div><!-- /example -->
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3" style="height:511px;margin-top:10px;margin-bottom:10px;border-left:1px solid #202020">
+                    <div class="row clearfix">
+                        <div class="col-lg-12">
+                            <h3 style="text-align:center;border-bottom:1px solid #202020;padding-bottom:10px">Quizás conozcas ...</h3> 
+                        </div>
+                    </div>
+                    <div style="overflow-y:visible;overflow-y:auto;overflow-x:hidden;height:450px">
+                        <div class="row clearfix">
+                            <div class="col-lg-3" style="padding:15px 15px">
+                                <img src="img/perfil7.png" class="img-rounded" style="width:70px;height:70px;" />
+                            </div>
+                            <div class="col-lg-9">
+                                <h4 style="margin-left:5px"><br />Carlos Garcia</h4>
+                            </div>
+                        </div>
+                        <div class="row clearfix">
+                            <div class="col-lg-3" style="padding:15px 15px">
+                                <img src="img/perfil.png" class="img-rounded" style="width:70px;height:70px;" />
+                            </div>
+                            <div class="col-lg-9">
+                                <h4 style="margin-left:5px"><br />Jordi Sanchez</h4>
+                            </div>
+                        </div>
+                        <div class="row clearfix">
+                            <div class="col-lg-3" style="padding:15px 15px">
+                                <img src="img/perfil2.png" class="img-rounded" style="width:70px;height:70px;" />
+                            </div>
+                            <div class="col-lg-9">
+                                <h4 style="margin-left:5px"><br />Francisco Perez</h4>
+                            </div>
+                        </div>
+                        <div class="row clearfix">
+                            <div class="col-lg-3" style="padding:15px 15px">
+                                <img src="img/perfil3.png" class="img-rounded" style="width:70px;height:70px;" />
+                            </div>
+                            <div class="col-lg-9">
+                                <h4 style="margin-left:5px"><br />Antonia Marin</h4>
+                            </div>
+                        </div>
+                        <div class="row clearfix">
+                            <div class="col-lg-3" style="padding:15px 15px">
+                                <img src="img/perfil4.png" class="img-rounded" style="width:70px;height:70px;" />
+                            </div>
+                            <div class="col-lg-9">
+                                <h4 style="margin-left:5px"><br />Pedro Garcia</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </div>
+      <div class="container">
+          <div class="row clearfix"  style="border-bottom: 1px solid #202020;margin-bottom:0px;background-color:#202020;color:White;padding:0px">
+            <div class="col-lg-8" style="text-align:right">
+                Copiright CodeFriends S.L.  Todos los derechos reservados
+            </div>
+            <div class="col-lg-4" style="text-align:right;">
+                3000 Likes <div class="glyphicon glyphicon-thumbs-up" style="color:White"></div>
+            </div>
+          </div>
+      </div>
+</body>
+</html>

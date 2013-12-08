@@ -1,0 +1,292 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CodeFriends</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57-precomposed.png">
+  <link rel="shortcut icon" href="img/favicon.png">
+  
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+    
+    <style type="text/css">
+        textarea {
+            resize:none;
+            width:100%;
+            margin-top:7px;
+        }
+        body
+        {
+            background-color:#202020;
+            font-family:Verdana;
+        }
+        #nav
+        {
+            background-color:#202020;
+        }
+        button
+        {
+              width:100px;
+        }
+        p
+        {
+            font-size:16px;
+        }
+        .t-2
+        {
+            text-align:center;
+        }
+       input[type=checkbox].css-checkbox {
+		    position: absolute; 
+		    overflow: hidden; 
+		    clip: rect(0 0 0 0); 
+		    height:1px; 
+		    width:1px; 
+		    margin:-1px; 
+		    padding:0;
+		    border:0;
+	    }
+
+	    input[type=checkbox].css-checkbox + label.css-label {
+		    padding-left:20px;
+		    height:15px; 
+		    display:inline-block;
+		    line-height:15px;
+		    background-repeat:no-repeat;
+		    background-position: 0 0;
+		    font-size:15px;
+		    vertical-align:middle;
+		    cursor:pointer;
+	    }
+
+	    input[type=checkbox].css-checkbox:checked + label.css-label {
+		    background-position: 0 -15px;
+	    }
+						
+	    .css-label 
+	    {
+	        background-image:url(http://csscheckbox.com/checkboxes/dark-plus.png); 
+	    }
+        
+    </style>
+</head>
+
+<body>
+      <div class="container" style="height:50px">
+
+        <div class="navbar-header" >
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" style="color:White;font-size:20px;padding-left:0px" href="Login.html"> <strong>CodeFriends</strong> </a>
+        </div>
+
+          <div class="navbar-collapse collapse" style="padding-right:0px">
+              <form class="navbar-form navbar-right" style="padding-right:0px">
+              <div class="form-group">
+                        <a style="color:Gray;">jordisanchez00@gmail.com</a><br />
+                        <a style="color:White;" href="Login.html">Cerrar sesion</a>
+                </div>
+              </form>
+            </div><!--/.navbar-collapse -->
+
+
+      </div>
+      <div class="container "style="background-color:#ffffff;height:595px;border:2px solid;border-radius:25px;"  >
+            <div class="row clearfix"  style="border-bottom: 1px solid #202020">
+		        <div class="col-md-12 column" style="margin-bottom:10px">
+			        <div class="row clearfix"  >
+				        <div class="col-md-8 column">
+					        <div class="btn-group btn-group-md">
+						         <button class="btn btn-inverse" style="background-color:#202020;color:White;margin-top:10px;width:70px" type="button"><a href="Principal.htm" style="color:White">Inicio</a></button> 
+                                 <button class="btn btn-inverse" style="background-color:#202020;color:White;margin-top:10px;width:110px" type="button"><a href="SubirCodigo.htm" style="color:White">Subir Codigo</a></button> 
+                                 <button class="btn btn-inverse" style="background-color:#202020;color:White;margin-top:10px;width:80px" type="button"><a href="Amigos.htm" style="color:White">Amigos</a></button> 
+                                 <button class="btn btn-inverse" style="background-color:#202020;color:White;margin-top:10px;width:80px" type="button"><a href="Circulos.htm" style="color:White">Circulos</a></button> 
+                                 <button class="btn btn-inverse" style="background-color:#202020;color:White;margin-top:10px;width:70px;padding-left:15px" type="button"> <a href="Retos.htm" style="color:White">Retos</a></button>
+                                 <button class="btn btn-inverse" style="background-color:#202020;color:White;margin-top:10px;width:70px" type="button"><a href="Logros.htm"  style="color:White">Logros</a></button>
+                                 <button class="btn btn-inverse" style="background-color:#202020;color:White;margin-top:10px;width:110px" type="button">Configuración</button>
+                                 <button class="btn btn-inverse" style="background-color:#202020;color:White;margin-top:10px;" type="button">Ayuda</button>
+					        </div>
+				        </div>
+				        <div class="col-md-4 column" style="margin-top:10px;text-align:right">
+                            <div class="row clearfix"> 
+                                <div class="col-md-9 column">
+                                     <input type="text" class="form-control" placeholder="Buscar"/> 
+                                </div>
+                                <div class="col-md-3 column">
+                                     <button class="btn btn-inverse" style="background-color:#202020;color:White;width:60px"> <span style="color:White" class="glyphicon glyphicon-search"></span> </button>
+                                </div>
+				            </div>
+                        </div>
+			        </div>
+		        </div>
+	        </div>
+            <div class="row clearfix" >
+                <div class="page-header" style="margin-top:10px;margin-bottom:0px;padding-bottom:2px">
+                    <h2 style="margin-top:10px;margin-bottom:0px;padding-left:30px">Retos</h2>
+                </div>
+            </div>
+            <div class="row clearfix" >
+                <div class="col-lg-4" style="overflow:visible;overflow-y:auto;overflow-x:hidden;height:450px">
+                    <h3>Pendientes</h3>
+                    <div class="row clearfix" style="padding-top:5px">
+                        <div class="col-lg-3">
+                            <img src="img/perfil2.png" class="img-rounded" style="width:100%" />
+                        </div>
+                        <div class="col-lg-9">
+                            <p>Carlos Garcia te ha desafiado</p>
+                             <div class="img-rounded" style="background-color:#202020;color:White;padding:5px"><p>Realiza dos formularios en menos de 3 horas</p></div>
+                             <div style="text-align:right;"><p><a style="color:#202020">Aceptar<span class="glyphicon glyphicon-ok" style="margin-right:4px"></span></a><a style="color:#202020">Rechazar<span class="glyphicon glyphicon-remove"></span></a></p></div>
+                        </div>
+                    </div>
+                    <div style="height:1px;width:450px;background-color:#202020">
+                    </div>
+                    <div class="row clearfix" style="padding-top:5px">
+                        <div class="col-lg-3">
+                            <img src="img/perfil4.png" class="img-rounded" style="width:100%" />
+                        </div>
+                        <div class="col-lg-9">
+                            <p>Ivan Sanchez te ha desafiado</p>
+                             <div class="img-rounded" style="background-color:#202020;color:White;padding:5px"><p>Realiza una web responsive antes del 5 de Mayo</p></div>
+                             <div style="text-align:right;"><p><a style="color:#202020">Aceptar<span class="glyphicon glyphicon-ok" style="margin-right:4px"></span></a><a style="color:#202020">Rechazar<span class="glyphicon glyphicon-remove"></span></a></p></div>
+                        </div>
+                    </div>
+                    <div style="height:1px;width:450px;background-color:#202020">
+                    </div>
+                    <div class="row clearfix" style="padding-top:5px">
+                        <div class="col-lg-3">
+                            <img src="img/perfil3.png" class="img-rounded" style="width:100%" />
+                        </div>
+                        <div class="col-lg-9">
+                            <p>Antonia Marin te ha desafiado</p>
+                             <div class="img-rounded" style="background-color:#202020;color:White;padding:5px"><p>Realiza una calculadora en menos de 20 minutos</p></div>
+                             <div style="text-align:right;"><p><a style="color:#202020">Aceptar<span class="glyphicon glyphicon-ok" style="margin-right:4px"></span></a><a style="color:#202020">Rechazar<span class="glyphicon glyphicon-remove"></span></a></p></div>
+                        </div>
+                    </div>
+                    <div style="height:1px;width:450px;background-color:#202020">
+                    </div>
+                    <div class="row clearfix" style="padding-top:5px">
+                        <div class="col-lg-3">
+                            <img src="img/perfil5.png" class="img-rounded" style="width:100%" />
+                        </div>
+                        <div class="col-lg-9">
+                            <p>Paola Fernandez te ha desafiado</p>
+                             <div class="img-rounded" style="background-color:#202020;color:White;padding:5px"><p>Realiza una animación JQuery antes del 5 de Diciembre</p></div>
+                             <div style="text-align:right;"><p><a style="color:#202020">Aceptar<span class="glyphicon glyphicon-ok" style="margin-right:4px"></span></a><a style="color:#202020">Rechazar<span class="glyphicon glyphicon-remove"></span></a></p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" style="overflow:visible;overflow-y:auto;overflow-x:hidden;height:450px">
+                    <h3>Finalizados</h3>
+                    <div class="row clearfix img-rounded" style="background-color:#3ea340;margin-left:3px;padding:5px;margin-bottom:5px">
+                        <div class="col-lg-3">
+                            <img src="img/perfil5.png" class="img-rounded" style="width:100%" />
+                        </div>
+                        <div class="col-lg-9">
+                            <p>Paola Fernandez</p>
+                            <p>Ganado</p>
+                            <div class="img-rounded" style="background-color:#202020;color:White">Realiza una animación JQuery antes del 5 de Diciembre</div>
+                        </div>
+                    </div>
+                    <div class="row clearfix img-rounded" style="background-color:#bf5254;margin-left:3px;padding:5px;margin-bottom:5px">
+                        <div class="col-lg-3">
+                            <img src="img/perfil3.png" class="img-rounded" style="width:100%" />
+                        </div>
+                        <div class="col-lg-9">
+                            <p>Antonia Marin</p>
+                            <p>Perdido</p>
+                            <div class="img-rounded" style="background-color:#202020;color:White">Realiza una calculadora en menos de 20 minutos</div>
+                        </div>
+                    </div>
+                    <div class="row clearfix img-rounded" style="background-color:#3ea340;margin-left:3px;padding:5px;margin-bottom:5px">
+                        <div class="col-lg-3">
+                            <img src="img/perfil4.png" class="img-rounded" style="width:100%" />
+                        </div>
+                        <div class="col-lg-9">
+                            <p>Paola Fernandez</p>
+                            <p>Ganado</p>
+                            <div class="img-rounded" style="background-color:#202020;color:White">Realiza una web responsive antes del 5 de Mayo</div>
+                        </div>
+                    </div>
+                    <div class="row clearfix img-rounded" style="background-color:#bf5254;margin-left:3px;padding:5px;margin-bottom:5px">
+                        <div class="col-lg-3">
+                            <img src="img/perfil2.png" class="img-rounded" style="width:100%" />
+                        </div>
+                        <div class="col-lg-9">
+                            <p>Carlos Garcia</p>
+                            <p>Perdido</p>
+                            <div class="img-rounded" style="background-color:#202020;color:White">Realiza una animación JQuery antes del 5 de Diciembre</div>
+                        </div>
+                    </div>
+                    <div class="row clearfix img-rounded" style="background-color:#bf5254;margin-left:3px;padding:5px;margin-bottom:5px">
+                        <div class="col-lg-3">
+                            <img src="img/perfil7.png" class="img-rounded" style="width:100%" />
+                        </div>
+                        <div class="col-lg-9">
+                            <p>Ivan Sanchez</p>
+                            <p>Perdido</p>
+                            <div class="img-rounded" style="background-color:#202020;color:White">Realiza una tabla responsive en menos de 10 minutos</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="row clearfix"> 
+                        <div class="col-md-12 column">
+                                <h3>Retar amigos ...</h3>
+                                <input type="text" class="form-control" placeholder="An"/> 
+                        </div>
+				    </div>
+                    <div class="bs-example table-responsive">
+                            <table class="table table-striped table-bordered table-hover" style="margin-top:10px">
+                            <tbody>
+                                <tr>
+                                <td><p>Antonia Marin</p></td>
+                                </tr>
+                                <tr>
+                                <td><p>Antonio Ferras</p></td>
+                                </tr>
+                                <tr>
+                                <td><p>Ana Cros</p></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><!-- /example -->
+                    <div class="row clearfix"> 
+                        <div class="col-md-12 column">
+                                <p>Escriba la descripción del reto</p>
+                                <textarea type="text" class="form-control" placeholder="Descripción del reto..." style="height:105px"></textarea>
+                                <button class="btn btn-inverse" style="background-color:#202020;color:White;margin-top:10px;" type="button">Retar</button>
+                        </div>
+				    </div>
+                </div>
+            </div>
+      </div>
+      <div class="container">
+          <div class="row clearfix"  style="border-bottom: 1px solid #202020;margin-bottom:0px;background-color:#202020;color:White;padding:0px">
+            <div class="col-lg-8" style="text-align:right">
+                Copiright CodeFriends S.L.  Todos los derechos reservados
+            </div>
+            <div class="col-lg-4" style="text-align:right;">
+                3000 Likes <div class="glyphicon glyphicon-thumbs-up" style="color:White"></div>
+            </div>
+          </div>
+      </div>
+</body>
+</html>
+
